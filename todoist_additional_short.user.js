@@ -233,8 +233,10 @@ function keyNum(num) {
     var n = num-1;
     
     nthProject = getNthProjectElem(n);
-    if (nthProject != null)
+    if (nthProject != null) {
+        highlightAgendaBox(false);
         simulateClick(nthProject,"click");
+    }
     return;
 }
 
